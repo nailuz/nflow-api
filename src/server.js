@@ -1,9 +1,6 @@
-import express from 'express'
+import app from './app.js';
 
-const app = express();
+const PORT = process.env.PORT;
+const HOST = process.env.HOST; 
 
-app.get('/', (req, res) => {
-    res.send('Api works');
-})
-
-app.listen(process.env.PORT, process.env.HOST);
+app.listen(PORT, HOST);

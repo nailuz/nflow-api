@@ -1,0 +1,14 @@
+version: '2'
+
+services: 
+  api-nflow:
+    build: .
+    ports: 
+      - "3000:3000"
+    environment: 
+      - PORT=3000
+      - HOST=0.0.0.0
+    volumes: 
+      - .:/home/node/app
+    command: "npm start"
+ 

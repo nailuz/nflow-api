@@ -1,5 +1,7 @@
 import express from 'express';
 import routes from './routes.js';
+import cors from 'cors';
+import morgan from 'morgan';
 
 class App {
   constructor() {
@@ -9,6 +11,8 @@ class App {
   }
 
   middlewares() {
+    this.server.use(morgan('dev'));
+    this.server.use(cors());
     this.server.use(express.json());
   }
 

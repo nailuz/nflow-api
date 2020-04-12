@@ -1,5 +1,5 @@
 {
-  "name": "n-flow-api",
+  "name": "nflow-api",
   "version": "1.0.0",
   "description": "Node api",
   "main": "src/server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuliandev/n-flow-api.git"
+    "url": "git+https://github.com/zuliandev/nflow-api.git"
   },
   "author": "zuliandev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuliandev/n-flow-api/issues"
+    "url": "https://github.com/zuliandev/nflow-api/issues"
   },
-  "homepage": "https://github.com/zuliandev/n-flow-api#readme",
+  "homepage": "https://github.com/zuliandev/nflow-api#readme",
   "dependencies": {
     "express": "^4.17.1"
   },

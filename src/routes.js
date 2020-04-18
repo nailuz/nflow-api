@@ -1,9 +1,9 @@
-import express from 'express';
+import express from 'express'
 
-const routes = new express.Router();
+const routes = new express.Router()
 
 routes.get('/', (req, res) => {
-    res.send('Working a log')
-});
+  res.send('Working a log')
+})
 
-export default routes;
+export default routes

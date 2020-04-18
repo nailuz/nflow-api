@@ -3,21 +3,20 @@
   "version": "1.0.0",
   "description": "Node api",
   "main": "src/server.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuliandev/nflow-api.git"
+    "url": "git+https://github.com/nailuz/nflow-api.git"
   },
-  "author": "zuliandev",
+  "author": "nailuz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuliandev/nflow-api/issues"
+    "url": "https://github.com/nailuz/nflow-api/issues"
   },
-  "homepage": "https://github.com/zuliandev/nflow-api#readme",
+  "homepage": "https://github.com/nailuz/nflow-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

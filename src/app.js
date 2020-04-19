@@ -4,6 +4,10 @@ import cors from 'cors'
 import morgan from 'morgan'
 import './database/postgres'
 
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env',
+})
+
 class App {
   constructor() {
     this.server = express()

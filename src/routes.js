@@ -1,9 +1,8 @@
-import express from 'express'
+import userRoutes from './components/users/routes'
+import { Router } from 'express'
 
-const routes = new express.Router()
+const routes = new Router()
 
-routes.get('/', (req, res) => {
-  res.send('Working a log')
-})
+routes.use('/users', userRoutes)
 
 export default routes

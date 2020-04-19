@@ -1,4 +1,4 @@
-version: '2'
+version: '3.1'
 
 services: 
   nflow-api:
@@ -17,6 +17,6 @@ services:
       - "POSTGRES_USER=${SQL_USER}"
       - "POSTGRES_DB=${SQL_DB}"
     volumes:
-      - ./src/database:/var/postgresql/data
+      - ./data:/var/postgresql/data
 
  

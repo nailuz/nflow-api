@@ -2,6 +2,7 @@ import express from 'express'
 import routes from './routes.js'
 import cors from 'cors'
 import morgan from 'morgan'
+import './database/postgres'
 
 class App {
   constructor() {

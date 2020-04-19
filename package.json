@@ -4,8 +4,8 @@
   "description": "Node api",
   "main": "./bin/www/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec sucrase-node ./bin/www/server.js"
+    "test": "jest",
+    "dev": "nodemon --exec sucrase-node ./bin/www/server.js --ignore __tests__"
   },
   "repository": {
     "type": "git",

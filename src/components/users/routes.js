@@ -1,15 +1,15 @@
 import { Router } from 'express'
-import ApiUsers from './api'
+import * as api from './api'
 
 const userRoutes = Router()
 
-userRoutes.get('', async (req, res) => {
-  const result = await ApiUsers.getUsers()
+userRoutes.get('', (req, res) => {
+  const result = api.getUsers()
   res.status(200).json(result)
 })
 
-userRoutes.post('', async (req, res) => {
-  const result = await ApiUsers.singUp()
+userRoutes.post('', (req, res) => {
+  const result = api.signUp()
   res.status(200).json(result)
 })
 

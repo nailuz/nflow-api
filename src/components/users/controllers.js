@@ -1,11 +1,7 @@
-class UserController {
-  static async getAllUsers() {
-    return { users: 'a lot of users' }
-  }
-
-  static async createUser() {
-    return { user: 'a new user' }
-  }
+export const getAllUsers = () => {
+  return { users: 'a lot of users' }
 }
 
-export default new UserController()
+export const createUser = () => {
+  return { user: 'a new user' }
+}

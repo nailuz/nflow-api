@@ -1,13 +1,9 @@
-import UserController from './controllers'
+import * as controllers from './controllers'
 
-class UserApi {
-  static async signUp() {
-    return UserController.createUser()
-  }
-
-  static async getUsers() {
-    return UserController.getAllUsers()
-  }
+export const signUp = () => {
+  return controllers.createUser()
 }
 
-export default new UserApi()
+export const getUsers = () => {
+  return controllers.getAllUsers()
+}

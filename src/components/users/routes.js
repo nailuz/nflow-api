@@ -8,8 +8,9 @@ userRoutes.get('', (req, res) => {
   res.status(200).json(result)
 })
 
-userRoutes.post('', (req, res) => {
-  const result = api.signUp()
+userRoutes.post('', async (req, res) => {
+  const contentRequest = { ...req.body }
+  const result = await api.signUp(contentRequest)
   res.status(200).json(result)
 })
 
